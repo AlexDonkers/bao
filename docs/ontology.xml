@@ -34,10 +34,12 @@ The ontology has been developed based on common certification schemes related to
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
@@ -45,11 +47,13 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -57,11 +61,13 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- http://purl.org/dc/terms/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
@@ -69,11 +75,13 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
@@ -81,11 +89,13 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
+
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/weblog -->
+
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/weblog"/>
     
@@ -99,10 +109,12 @@ The ontology has been developed based on common certification schemes related to
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://alexdonkers.github.io/bao#assesses -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#assesses">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isAssessedBy"/>
@@ -117,6 +129,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#calculates -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#calculates">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isCalculatedBy"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Equation"/>
@@ -128,6 +141,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasCategory -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasCategory">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
@@ -143,6 +157,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasCredit -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasCredit">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isCreditOf"/>
@@ -156,6 +171,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasCriterion -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasCriterion">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
@@ -171,6 +187,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasMetric -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasMetric">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isMetricOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -184,6 +201,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasObjective -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasObjective">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isObjectiveOf"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Criterion"/>
@@ -195,6 +213,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasPart -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasPart">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
@@ -211,6 +230,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasStandardizationBody -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasStandardizationBody">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isStandardizationBodyOf"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Standard"/>
@@ -222,6 +242,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasSubCategory -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasSubCategory">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
@@ -238,6 +259,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasSubCredit -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasSubCredit">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isSubCreditOf"/>
@@ -252,6 +274,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasSubCriterion -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasSubCriterion">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
@@ -268,6 +291,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasSubStandard -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasSubStandard">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#hasPart"/>
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isSubStandardOf"/>
@@ -283,6 +307,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasSymbol -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasSymbol">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isSymbolOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -295,6 +320,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasUnit -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#hasUnit">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#isUnitOf"/>
@@ -309,6 +335,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isAssessedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isAssessedBy">
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#FeatureOfInterest"/>
         <rdfs:range rdf:resource="https://alexdonkers.github.io/bao#Credit"/>
@@ -321,6 +348,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isCalculatedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isCalculatedBy">
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Parameter"/>
         <rdfs:range rdf:resource="https://alexdonkers.github.io/bao#Equation"/>
@@ -331,6 +359,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#isCategoryOf -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isCategoryOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
@@ -345,6 +374,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isCreditOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isCreditOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -357,6 +387,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#isCriterionOf -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isCriterionOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
@@ -371,6 +402,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isMetricOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isMetricOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Metric"/>
@@ -383,6 +415,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isObjectiveOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isObjectiveOf">
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Objective"/>
         <rdfs:range rdf:resource="https://alexdonkers.github.io/bao#Criterion"/>
@@ -393,6 +426,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#isPartOf -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isPartOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -407,6 +441,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isStandardizationBodyOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isStandardizationBodyOf">
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#StandardizationBody"/>
         <rdfs:range rdf:resource="https://alexdonkers.github.io/bao#Standard"/>
@@ -417,6 +452,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#isSubCategoryOf -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isSubCategoryOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
@@ -432,6 +468,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isSubCreditOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isSubCreditOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -445,6 +482,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#isSubCriterionOf -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isSubCriterionOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
@@ -460,6 +498,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isSubStandardOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isSubStandardOf">
         <rdfs:subPropertyOf rdf:resource="https://alexdonkers.github.io/bao#isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -474,6 +513,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isSymbolOf -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isSymbolOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Symbol"/>
@@ -485,6 +525,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#isUnitOf -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isUnitOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
@@ -498,6 +539,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#isUsedBy -->
 
+
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#isUsedBy">
         <owl:inverseOf rdf:resource="https://alexdonkers.github.io/bao#usesParameter"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Parameter"/>
@@ -509,6 +551,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#usesParameter -->
+
 
     <owl:ObjectProperty rdf:about="https://alexdonkers.github.io/bao#usesParameter">
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Equation"/>
@@ -527,10 +570,12 @@ The ontology has been developed based on common certification schemes related to
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://alexdonkers.github.io/bao#hasAssessment -->
+
 
     <owl:DatatypeProperty rdf:about="https://alexdonkers.github.io/bao#hasAssessment">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -544,6 +589,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasDescription -->
 
+
     <owl:DatatypeProperty rdf:about="https://alexdonkers.github.io/bao#hasDescription">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Criterion"/>
@@ -556,6 +602,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#hasExpression -->
 
+
     <owl:DatatypeProperty rdf:about="https://alexdonkers.github.io/bao#hasExpression">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://alexdonkers.github.io/bao#Equation"/>
@@ -567,6 +614,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#hasObjectiveValue -->
+
 
     <owl:DatatypeProperty rdf:about="https://alexdonkers.github.io/bao#hasObjectiveValue">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -585,10 +633,12 @@ The ontology has been developed based on common certification schemes related to
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://alexdonkers.github.io/bao#Category -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Category">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao/Part"/>
@@ -599,6 +649,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#Constant -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Constant">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao#Parameter"/>
@@ -611,6 +662,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#Credit -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Credit">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao/Part"/>
         <rdfs:comment xml:lang="en">A performance aspect.</rdfs:comment>
@@ -620,6 +672,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#Criterion -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Criterion">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao/Part"/>
@@ -631,6 +684,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#Equation -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Equation">
         <rdfs:comment xml:lang="en">A mathematical statement that asserts the equality of two expressions</rdfs:comment>
         <rdfs:label xml:lang="en">Equation</rdfs:label>
@@ -640,6 +694,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#FeatureOfInterest -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#FeatureOfInterest">
         <rdfs:comment xml:lang="en">An abstraction of a real-world phenomenon.</rdfs:comment>
         <rdfs:label xml:lang="en">Feature of interest</rdfs:label>
@@ -648,6 +703,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#Metric -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Metric">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao#Parameter"/>
@@ -659,6 +715,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#Objective -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Objective">
         <rdfs:comment xml:lang="en">Describes the desired value of a metric. An objective consists of one value and a corresponding assessment. Next to plain values, we also introduced specialized objectives, such as a minimum value, an average value or a count. A criterion can have multiple objectives.</rdfs:comment>
         <rdfs:label xml:lang="en">Objective</rdfs:label>
@@ -668,6 +725,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#Parameter -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Parameter">
         <rdfs:comment xml:lang="en">A physical property which value determines the characteristic of something.</rdfs:comment>
         <rdfs:label xml:lang="en">Parameter</rdfs:label>
@@ -676,6 +734,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#Standard -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Standard">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao/Part"/>
@@ -687,6 +746,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#StandardizationBody -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#StandardizationBody">
         <rdfs:comment xml:lang="en">A social or legal institution managing a standard.</rdfs:comment>
         <rdfs:label xml:lang="en">Standardization body</rdfs:label>
@@ -695,6 +755,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#Symbol -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Symbol">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao#Equation"/>
@@ -707,6 +768,7 @@ The ontology has been developed based on common certification schemes related to
 
     <!-- https://alexdonkers.github.io/bao#Unit -->
 
+
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Unit">
         <rdfs:comment xml:lang="en">A particular quantity value that has been chosen as a scale for measuring other quantities of the same kind.</rdfs:comment>
         <rdfs:label xml:lang="en">Unit</rdfs:label>
@@ -715,6 +777,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao#Variable -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao#Variable">
         <rdfs:subClassOf rdf:resource="https://alexdonkers.github.io/bao#Parameter"/>
@@ -725,6 +788,7 @@ The ontology has been developed based on common certification schemes related to
 
 
     <!-- https://alexdonkers.github.io/bao/Part -->
+
 
     <owl:Class rdf:about="https://alexdonkers.github.io/bao/Part">
         <rdfs:comment xml:lang="en">A collective class which is introduced to represent standards and parts of these standards.</rdfs:comment>
@@ -741,16 +805,19 @@ The ontology has been developed based on common certification schemes related to
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://alexdonkers.github.io/bao# -->
+
 
     <owl:NamedIndividual rdf:about="https://alexdonkers.github.io/bao#"/>
     
 
 
     <!-- https://orcid.org/0000-0002-8809-3277 -->
+
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-8809-3277">
         <rdfs:label>Alex Donkers</rdfs:label>
@@ -768,6 +835,7 @@ The ontology has been developed based on common certification schemes related to
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -781,5 +849,6 @@ The ontology has been developed based on common certification schemes related to
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
 

@@ -1,0 +1,1167 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://alexdonkers.github.io/bao" ],
+    "title" : {
+      "en" : "Building Assessment Ontology"
+    },
+    "iri" : "https://alexdonkers.github.io/bao",
+    "version" : "1.0",
+    "author" : [ "https://orcid.org/0000-0002-8809-3277" ],
+    "description" : {
+      "en" : "The Building Assessment Ontology is a consice ontology, developed to semantically describe standards, building codes, certification schemes and regulations in the AEC industry. \n\nIt's aim is to make the integration of such schemes with the actual building easier, to automate the performance evaluation of buildings. The ontology could describe both simple assessment criteria and complex algorithms with multiple parameters.\n\nThe ontology has been developed based on common certification schemes related to building performance (including LEED v4.1 O+M, BREEAM In-Use, WELL v2, Green Star - Performance, Energy Star, Green Globes EB and BOMA BEST Sustainable Buildings 3.0)"
+    },
+    "labels" : {
+      "en" : "Building Assessment Ontology"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-8809-3277",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "bao",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://alexdonkers.github.io/bao#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Building Assessment Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "14",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://alexdonkers.github.io/bao#StandardizationBody",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StandardizationBody",
+      "en" : "Standardization body"
+    },
+    "comment" : {
+      "en" : "A social or legal institution managing a standard."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Unit",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit",
+      "en" : "Unit"
+    },
+    "comment" : {
+      "en" : "A particular quantity value that has been chosen as a scale for measuring other quantities of the same kind."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#FeatureOfInterest",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "Feature of interest"
+    },
+    "comment" : {
+      "en" : "An abstraction of a real-world phenomenon."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Parameter",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "subClasses" : [ "23", "24", "25" ],
+    "comment" : {
+      "en" : "A physical property which value determines the characteristic of something."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao/Part",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Part",
+      "en" : "Part"
+    },
+    "subClasses" : [ "13", "3", "27", "10" ],
+    "comment" : {
+      "en" : "A collective class which is introduced to represent standards and parts of these standards."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Objective",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Objective",
+      "en" : "Objective"
+    },
+    "comment" : {
+      "en" : "Describes the desired value of a metric. An objective consists of one value and a corresponding assessment. Next to plain values, we also introduced specialized objectives, such as a minimum value, an average value or a count. A criterion can have multiple objectives."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "14",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Category",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category",
+      "en" : "Category"
+    },
+    "comment" : {
+      "en" : "A collection of performance aspects based on their similarities."
+    },
+    "id" : "13",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Constant",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Constant",
+      "en" : "Constant"
+    },
+    "comment" : {
+      "en" : "A parameter with a static value."
+    },
+    "id" : "23",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Variable",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable",
+      "en" : "Variable"
+    },
+    "comment" : {
+      "en" : "A parameter with a value that may change over time."
+    },
+    "id" : "25",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Symbol",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Symbol",
+      "en" : "Symbol"
+    },
+    "comment" : {
+      "en" : "A figure that is used to represent a parameter."
+    },
+    "id" : "32",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Standard",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Standard",
+      "en" : "Standard"
+    },
+    "comment" : {
+      "en" : "A document containing predefined criteria to compare the actual performance by a desired performance."
+    },
+    "id" : "27",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Metric",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric",
+      "en" : "Metric"
+    },
+    "comment" : {
+      "en" : "A parameter which is used to compare the actual performance to the desired performance."
+    },
+    "id" : "24",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Criterion",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Criterion",
+      "en" : "Criterion"
+    },
+    "comment" : {
+      "en" : "A predefined rule by which the actual performance is compared to."
+    },
+    "id" : "3",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Equation",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Equation",
+      "en" : "Equation"
+    },
+    "subClasses" : [ "32" ],
+    "comment" : {
+      "en" : "A mathematical statement that asserts the equality of two expressions"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#Credit",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Credit",
+      "en" : "Credit"
+    },
+    "comment" : {
+      "en" : "A performance aspect."
+    },
+    "id" : "10",
+    "superClasses" : [ "26" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://alexdonkers.github.io/bao#hasCriterion",
+    "inverse" : "4",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasCriterion",
+      "en" : "has criterion"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "2",
+    "comment" : {
+      "en" : "Describing the relationship between a part and its criterion."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isObjectiveOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isObjectiveOf",
+      "en" : "is objective of"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Linking an objective to the criterion it belongs to. A criterion can have multiple objectives."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasSubCredit",
+    "inverse" : "11",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasSubCredit",
+      "en" : "has sub credit"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "Describing the relationship between a credit and its sub credit."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isCategoryOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isCategoryOf",
+      "en" : "is category of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "Describing the relationship between a category and the part which containts this category."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasSubCategory",
+    "inverse" : "17",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasSubCategory",
+      "en" : "has sub category"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "Describing the relationship between a category and its sub category."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isSubCreditOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isSubCreditOf",
+      "en" : "is sub credit of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "Describing a part-whole relationship between a sub credit and the credit it belongs to."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isSubCriterionOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isSubCriterionOf",
+      "en" : "is sub criterion of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "Describing a part-whole relationship between a sub criterion and the criterion it belongs to."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isCalculatedBy",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isCalculatedBy",
+      "en" : "is calculated by"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Describing the relationship between a parameter and the equation which calculates this parameter."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isMetricOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isMetricOf",
+      "en" : "is metric of"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "Linking a metric to the criterion it belongs to. A criterion can only have one metric."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "26",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "26",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "21",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasCategory",
+    "inverse" : "12",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasCategory",
+      "en" : "has category"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "Describing the relationship between a part and its category."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasCredit",
+    "inverse" : "36",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasCredit",
+      "en" : "has credit"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "35",
+    "comment" : {
+      "en" : "Describing the relationship between a part and its credit."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isUsedBy",
+    "inverse" : "38",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isUsedBy",
+      "en" : "is used by"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Describing the relationship between a parameter and an equation which uses this parameter."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasDescription",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "en" : "has description"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Links a criterion to a textual description."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasPart",
+    "inverse" : "15",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "26",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "ao:hasPart is a transitive property, implying that if a bao:Standard -bao:hasPart-> bao:Category, and bao:Category -bao:hasPart-> bao:Credit, then reasoners would infer bao:Standard -bao:hasPart-> bao:Credit.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "has part"
+    },
+    "domain" : "26",
+    "subproperty" : [ "33", "16", "1", "34", "9", "41", "42" ],
+    "comment" : {
+      "en" : "Relationship between parts and sub parts of a standard. Being the superclass of multiple part-of relationships, bao:hasPart could be used to simply query multiple part-of relationships."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#usesParameter",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "usesParameter",
+      "en" : "uses parameter"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Describing the relationship between an equation and a parameter which is used in this equation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasSubStandard",
+    "inverse" : "43",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasSubStandard",
+      "en" : "has sub standard"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "27",
+    "comment" : {
+      "en" : "Describing the relationship between a standard and its sub standard."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasSubCriterion",
+    "inverse" : "18",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasSubCriterion",
+      "en" : "has sub criterion"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "Describing the relationship between a criterion and its sub criterion."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "42"
+  }, {
+    "range" : "26",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "20",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "26",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "20",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "20",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasMetric",
+    "inverse" : "28",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasMetric",
+      "en" : "has metric"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Linking a criterion to its metric. A criterion can only have one metric."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isSymbolOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isSymbolOf",
+      "en" : "is symbol of"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Linking a symbolic representation to the parameter it represents."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isCriterionOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCriterionOf",
+      "en" : "is criterion of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "Describing the relationship between a criterion and the part which containts this criterion."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasExpression",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasExpression",
+      "en" : "has expression"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Links an equation to its expression. The expression is described using a string."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasObjective",
+    "inverse" : "7",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasObjective",
+      "en" : "has objective"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Linking a criterion to its objective. A criterion can have multiple objectives."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "range" : "27",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "27",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "27",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "25",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "6",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasUnit",
+    "inverse" : "63",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "has unit"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Linking a parameter to a unit."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "62"
+  }, {
+    "range" : "10",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "3",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isSubCategoryOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isSubCategoryOf",
+      "en" : "is sub category of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "Describing a part-whole relationship between a sub category and the category it belongs to."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isAssessedBy",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "10",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For example, a room (bao:FeatureOfInterest) could be linked to thermal comfort requirements (bao:Credit) using this object property.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAssessedBy",
+      "en" : "is assessed by"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Linking a feature of interest to the credit it is assessed by."
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isPartOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "en" : "is part of"
+    },
+    "domain" : "26",
+    "subproperty" : [ "4", "11", "43", "18", "36", "17", "12" ],
+    "comment" : {
+      "en" : "Relationship between sub parts and parts of a standard."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isCreditOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "isCreditOf",
+      "en" : "is credit of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "Describing the relationship between a credit and the part which containts this credit."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#calculates",
+    "inverse" : "19",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "calculates",
+      "en" : "calculates"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Describing the relationship between an equation and the parameter which is calculated by this equation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasStandardizationBody",
+    "inverse" : "69",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasStandardizationBody",
+      "en" : "has standardization body"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Linking a standard to a standardization body managing this standard."
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#assesses",
+    "inverse" : "66",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "22",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For example, thermal comfort requirements (bao:Credit) could be linked to a room (bao:FeatureOfInterest) using this object property.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assesses",
+      "en" : "assesses"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Linking a credit to a feature of interest it assesses."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasAssessment",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "48",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "E.g. awarded points, 'Good', 'Acceptable', 'Poor'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAssessment",
+      "en" : "has assessment"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "The assessment corresponding to the objective."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasObjectiveValue",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasObjectiveValue",
+      "en" : "has objective value"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Links the objective to its objective value. This value is being compared to the measured value to assess it."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isSubStandardOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isSubStandardOf",
+      "en" : "is sub standard of"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "27",
+    "comment" : {
+      "en" : "Describing a part-whole relationship between a sub standard and the standard it belongs to."
+    },
+    "attributes" : [ "object", "asymmetric", "transitive" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isUnitOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isUnitOf",
+      "en" : "is unit of"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Linking a unit to a parameter."
+    },
+    "attributes" : [ "inverse functional", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#hasSymbol",
+    "inverse" : "52",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasSymbol",
+      "en" : "has symbol"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Linking a parameter to its symbolic representation."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://alexdonkers.github.io/bao#isStandardizationBodyOf",
+    "baseIri" : "https://alexdonkers.github.io/bao",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isStandardizationBodyOf",
+      "en" : "is standardization body of"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Linking a standardization body to a standard."
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  } ]
+}

@@ -1,0 +1,519 @@
+<https://alexdonkers.github.io/bao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://alexdonkers.github.io/bao> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-8809-3277> .
+<https://alexdonkers.github.io/bao> <http://purl.org/dc/terms/description> "The Building Assessment Ontology is a consice ontology, developed to semantically describe standards, building codes, certification schemes and regulations in the AEC industry. \n\nIt's aim is to make the integration of such schemes with the actual building easier, to automate the performance evaluation of buildings. The ontology could describe both simple assessment criteria and complex algorithms with multiple parameters.\n\nThe ontology has been developed based on common certification schemes related to building performance (including LEED v4.1 O+M, BREEAM In-Use, WELL v2, Green Star - Performance, Energy Star, Green Globes EB and BOMA BEST Sustainable Buildings 3.0)"@en .
+<https://alexdonkers.github.io/bao> <http://purl.org/dc/terms/title> "Building Assessment Ontology"@en .
+<https://alexdonkers.github.io/bao> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bao"@en .
+<https://alexdonkers.github.io/bao> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://alexdonkers.github.io/bao#> .
+<https://alexdonkers.github.io/bao> <http://www.w3.org/2000/01/rdf-schema#label> "Building Assessment Ontology"@en .
+<https://alexdonkers.github.io/bao> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/weblog
+<http://xmlns.com/foaf/0.1/weblog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://alexdonkers.github.io/bao#assesses
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isAssessedBy> .
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#FeatureOfInterest> .
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a credit to a feature of interest it assesses."@en .
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/2000/01/rdf-schema#label> "assesses"@en .
+<https://alexdonkers.github.io/bao#assesses> <http://www.w3.org/2004/02/skos/core#example> "For example, thermal comfort requirements (bao:Credit) could be linked to a room (bao:FeatureOfInterest) using this object property."@en .
+# 
+# https://alexdonkers.github.io/bao#calculates
+<https://alexdonkers.github.io/bao#calculates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#calculates> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isCalculatedBy> .
+<https://alexdonkers.github.io/bao#calculates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Equation> .
+<https://alexdonkers.github.io/bao#calculates> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#calculates> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between an equation and the parameter which is calculated by this equation."@en .
+<https://alexdonkers.github.io/bao#calculates> <http://www.w3.org/2000/01/rdf-schema#label> "calculates"@en .
+# 
+# https://alexdonkers.github.io/bao#hasCategory
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isCategoryOf> .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Category> .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a part and its category."@en .
+<https://alexdonkers.github.io/bao#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has category"@en .
+# 
+# https://alexdonkers.github.io/bao#hasCredit
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isCreditOf> .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a part and its credit."@en .
+<https://alexdonkers.github.io/bao#hasCredit> <http://www.w3.org/2000/01/rdf-schema#label> "has credit"@en .
+# 
+# https://alexdonkers.github.io/bao#hasCriterion
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isCriterionOf> .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a part and its criterion."@en .
+<https://alexdonkers.github.io/bao#hasCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "has criterion"@en .
+# 
+# https://alexdonkers.github.io/bao#hasMetric
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isMetricOf> .
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Metric> .
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a criterion to its metric. A criterion can only have one metric."@en .
+<https://alexdonkers.github.io/bao#hasMetric> <http://www.w3.org/2000/01/rdf-schema#label> "has metric"@en .
+# 
+# https://alexdonkers.github.io/bao#hasObjective
+<https://alexdonkers.github.io/bao#hasObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasObjective> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isObjectiveOf> .
+<https://alexdonkers.github.io/bao#hasObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#hasObjective> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Objective> .
+<https://alexdonkers.github.io/bao#hasObjective> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a criterion to its objective. A criterion can have multiple objectives."@en .
+<https://alexdonkers.github.io/bao#hasObjective> <http://www.w3.org/2000/01/rdf-schema#label> "has objective"@en .
+# 
+# https://alexdonkers.github.io/bao#hasPart
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between parts and sub parts of a standard. Being the superclass of multiple part-of relationships, bao:hasPart could be used to simply query multiple part-of relationships."@en .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+<https://alexdonkers.github.io/bao#hasPart> <http://www.w3.org/2004/02/skos/core#example> "ao:hasPart is a transitive property, implying that if a bao:Standard -bao:hasPart-> bao:Category, and bao:Category -bao:hasPart-> bao:Credit, then reasoners would infer bao:Standard -bao:hasPart-> bao:Credit."@en .
+# 
+# https://alexdonkers.github.io/bao#hasStandardizationBody
+<https://alexdonkers.github.io/bao#hasStandardizationBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasStandardizationBody> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isStandardizationBodyOf> .
+<https://alexdonkers.github.io/bao#hasStandardizationBody> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Standard> .
+<https://alexdonkers.github.io/bao#hasStandardizationBody> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#StandardizationBody> .
+<https://alexdonkers.github.io/bao#hasStandardizationBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a standard to a standardization body managing this standard."@en .
+<https://alexdonkers.github.io/bao#hasStandardizationBody> <http://www.w3.org/2000/01/rdf-schema#label> "has standardization body"@en .
+# 
+# https://alexdonkers.github.io/bao#hasSubCategory
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isSubCategoryOf> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Category> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Category> .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a category and its sub category."@en .
+<https://alexdonkers.github.io/bao#hasSubCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has sub category"@en .
+# 
+# https://alexdonkers.github.io/bao#hasSubCredit
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isSubCreditOf> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a credit and its sub credit."@en .
+<https://alexdonkers.github.io/bao#hasSubCredit> <http://www.w3.org/2000/01/rdf-schema#label> "has sub credit"@en .
+# 
+# https://alexdonkers.github.io/bao#hasSubCriterion
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isSubCriterionOf> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a criterion and its sub criterion."@en .
+<https://alexdonkers.github.io/bao#hasSubCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "has sub criterion"@en .
+# 
+# https://alexdonkers.github.io/bao#hasSubStandard
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#hasPart> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isSubStandardOf> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Standard> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Standard> .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a standard and its sub standard."@en .
+<https://alexdonkers.github.io/bao#hasSubStandard> <http://www.w3.org/2000/01/rdf-schema#label> "has sub standard"@en .
+# 
+# https://alexdonkers.github.io/bao#hasSymbol
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isSymbolOf> .
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Symbol> .
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a parameter to its symbolic representation."@en .
+<https://alexdonkers.github.io/bao#hasSymbol> <http://www.w3.org/2000/01/rdf-schema#label> "has symbol"@en .
+# 
+# https://alexdonkers.github.io/bao#hasUnit
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#isUnitOf> .
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Unit> .
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a parameter to a unit."@en .
+<https://alexdonkers.github.io/bao#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit"@en .
+# 
+# https://alexdonkers.github.io/bao#isAssessedBy
+<https://alexdonkers.github.io/bao#isAssessedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isAssessedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#FeatureOfInterest> .
+<https://alexdonkers.github.io/bao#isAssessedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#isAssessedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a feature of interest to the credit it is assessed by."@en .
+<https://alexdonkers.github.io/bao#isAssessedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is assessed by"@en .
+<https://alexdonkers.github.io/bao#isAssessedBy> <http://www.w3.org/2004/02/skos/core#example> "For example, a room (bao:FeatureOfInterest) could be linked to thermal comfort requirements (bao:Credit) using this object property."@en .
+# 
+# https://alexdonkers.github.io/bao#isCalculatedBy
+<https://alexdonkers.github.io/bao#isCalculatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isCalculatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#isCalculatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Equation> .
+<https://alexdonkers.github.io/bao#isCalculatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a parameter and the equation which calculates this parameter."@en .
+<https://alexdonkers.github.io/bao#isCalculatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is calculated by"@en .
+# 
+# https://alexdonkers.github.io/bao#isCategoryOf
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Category> .
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a category and the part which containts this category."@en .
+<https://alexdonkers.github.io/bao#isCategoryOf> <http://www.w3.org/2000/01/rdf-schema#label> "is category of"@en .
+# 
+# https://alexdonkers.github.io/bao#isCreditOf
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a credit and the part which containts this credit."@en .
+<https://alexdonkers.github.io/bao#isCreditOf> <http://www.w3.org/2000/01/rdf-schema#label> "is credit of"@en .
+# 
+# https://alexdonkers.github.io/bao#isCriterionOf
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a criterion and the part which containts this criterion."@en .
+<https://alexdonkers.github.io/bao#isCriterionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is criterion of"@en .
+# 
+# https://alexdonkers.github.io/bao#isMetricOf
+<https://alexdonkers.github.io/bao#isMetricOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isMetricOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://alexdonkers.github.io/bao#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Metric> .
+<https://alexdonkers.github.io/bao#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a metric to the criterion it belongs to. A criterion can only have one metric."@en .
+<https://alexdonkers.github.io/bao#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#label> "is metric of"@en .
+# 
+# https://alexdonkers.github.io/bao#isObjectiveOf
+<https://alexdonkers.github.io/bao#isObjectiveOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isObjectiveOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Objective> .
+<https://alexdonkers.github.io/bao#isObjectiveOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#isObjectiveOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking an objective to the criterion it belongs to. A criterion can have multiple objectives."@en .
+<https://alexdonkers.github.io/bao#isObjectiveOf> <http://www.w3.org/2000/01/rdf-schema#label> "is objective of"@en .
+# 
+# https://alexdonkers.github.io/bao#isPartOf
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between sub parts and parts of a standard."@en .
+<https://alexdonkers.github.io/bao#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+# 
+# https://alexdonkers.github.io/bao#isStandardizationBodyOf
+<https://alexdonkers.github.io/bao#isStandardizationBodyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isStandardizationBodyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#StandardizationBody> .
+<https://alexdonkers.github.io/bao#isStandardizationBodyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Standard> .
+<https://alexdonkers.github.io/bao#isStandardizationBodyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a standardization body to a standard."@en .
+<https://alexdonkers.github.io/bao#isStandardizationBodyOf> <http://www.w3.org/2000/01/rdf-schema#label> "is standardization body of"@en .
+# 
+# https://alexdonkers.github.io/bao#isSubCategoryOf
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Category> .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Category> .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing a part-whole relationship between a sub category and the category it belongs to."@en .
+<https://alexdonkers.github.io/bao#isSubCategoryOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sub category of"@en .
+# 
+# https://alexdonkers.github.io/bao#isSubCreditOf
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Credit> .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing a part-whole relationship between a sub credit and the credit it belongs to."@en .
+<https://alexdonkers.github.io/bao#isSubCreditOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sub credit of"@en .
+# 
+# https://alexdonkers.github.io/bao#isSubCriterionOf
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing a part-whole relationship between a sub criterion and the criterion it belongs to."@en .
+<https://alexdonkers.github.io/bao#isSubCriterionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sub criterion of"@en .
+# 
+# https://alexdonkers.github.io/bao#isSubStandardOf
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://alexdonkers.github.io/bao#isPartOf> .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Standard> .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Standard> .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing a part-whole relationship between a sub standard and the standard it belongs to."@en .
+<https://alexdonkers.github.io/bao#isSubStandardOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sub standard of"@en .
+# 
+# https://alexdonkers.github.io/bao#isSymbolOf
+<https://alexdonkers.github.io/bao#isSymbolOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isSymbolOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://alexdonkers.github.io/bao#isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Symbol> .
+<https://alexdonkers.github.io/bao#isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a symbolic representation to the parameter it represents."@en .
+<https://alexdonkers.github.io/bao#isSymbolOf> <http://www.w3.org/2000/01/rdf-schema#label> "is symbol of"@en .
+# 
+# https://alexdonkers.github.io/bao#isUnitOf
+<https://alexdonkers.github.io/bao#isUnitOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isUnitOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://alexdonkers.github.io/bao#isUnitOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Unit> .
+<https://alexdonkers.github.io/bao#isUnitOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#isUnitOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a unit to a parameter."@en .
+<https://alexdonkers.github.io/bao#isUnitOf> <http://www.w3.org/2000/01/rdf-schema#label> "is unit of"@en .
+# 
+# https://alexdonkers.github.io/bao#isUsedBy
+<https://alexdonkers.github.io/bao#isUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#isUsedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://alexdonkers.github.io/bao#usesParameter> .
+<https://alexdonkers.github.io/bao#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Equation> .
+<https://alexdonkers.github.io/bao#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between a parameter and an equation which uses this parameter."@en .
+<https://alexdonkers.github.io/bao#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is used by"@en .
+# 
+# https://alexdonkers.github.io/bao#usesParameter
+<https://alexdonkers.github.io/bao#usesParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://alexdonkers.github.io/bao#usesParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Equation> .
+<https://alexdonkers.github.io/bao#usesParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#usesParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relationship between an equation and a parameter which is used in this equation."@en .
+<https://alexdonkers.github.io/bao#usesParameter> <http://www.w3.org/2000/01/rdf-schema#label> "uses parameter"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://alexdonkers.github.io/bao#hasAssessment
+<https://alexdonkers.github.io/bao#hasAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alexdonkers.github.io/bao#hasAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Objective> .
+<https://alexdonkers.github.io/bao#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "The assessment corresponding to the objective."@en .
+<https://alexdonkers.github.io/bao#hasAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "has assessment"@en .
+<https://alexdonkers.github.io/bao#hasAssessment> <http://www.w3.org/2004/02/skos/core#example> "E.g. awarded points, 'Good', 'Acceptable', 'Poor'"@en .
+# 
+# https://alexdonkers.github.io/bao#hasDescription
+<https://alexdonkers.github.io/bao#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alexdonkers.github.io/bao#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Criterion> .
+<https://alexdonkers.github.io/bao#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://alexdonkers.github.io/bao#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a criterion to a textual description."@en .
+<https://alexdonkers.github.io/bao#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en .
+# 
+# https://alexdonkers.github.io/bao#hasExpression
+<https://alexdonkers.github.io/bao#hasExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alexdonkers.github.io/bao#hasExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Equation> .
+<https://alexdonkers.github.io/bao#hasExpression> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://alexdonkers.github.io/bao#hasExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an equation to its expression. The expression is described using a string."@en .
+<https://alexdonkers.github.io/bao#hasExpression> <http://www.w3.org/2000/01/rdf-schema#label> "has expression"@en .
+# 
+# https://alexdonkers.github.io/bao#hasObjectiveValue
+<https://alexdonkers.github.io/bao#hasObjectiveValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://alexdonkers.github.io/bao#hasObjectiveValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://alexdonkers.github.io/bao#hasObjectiveValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://alexdonkers.github.io/bao#Objective> .
+<https://alexdonkers.github.io/bao#hasObjectiveValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Links the objective to its objective value. This value is being compared to the measured value to assess it."@en .
+<https://alexdonkers.github.io/bao#hasObjectiveValue> <http://www.w3.org/2000/01/rdf-schema#label> "has objective value"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://alexdonkers.github.io/bao#Category
+<https://alexdonkers.github.io/bao#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of performance aspects based on their similarities."@en .
+<https://alexdonkers.github.io/bao#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+# 
+# https://alexdonkers.github.io/bao#Constant
+<https://alexdonkers.github.io/bao#Constant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Constant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#Constant> <http://www.w3.org/2002/07/owl#disjointWith> <https://alexdonkers.github.io/bao#Variable> .
+<https://alexdonkers.github.io/bao#Constant> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter with a static value."@en .
+<https://alexdonkers.github.io/bao#Constant> <http://www.w3.org/2000/01/rdf-schema#label> "Constant"@en .
+# 
+# https://alexdonkers.github.io/bao#Credit
+<https://alexdonkers.github.io/bao#Credit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Credit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#Credit> <http://www.w3.org/2000/01/rdf-schema#comment> "A performance aspect."@en .
+<https://alexdonkers.github.io/bao#Credit> <http://www.w3.org/2000/01/rdf-schema#label> "Credit"@en .
+# 
+# https://alexdonkers.github.io/bao#Criterion
+<https://alexdonkers.github.io/bao#Criterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#Criterion> <http://www.w3.org/2000/01/rdf-schema#comment> "A predefined rule by which the actual performance is compared to."@en .
+<https://alexdonkers.github.io/bao#Criterion> <http://www.w3.org/2000/01/rdf-schema#label> "Criterion"@en .
+# 
+# https://alexdonkers.github.io/bao#Equation
+<https://alexdonkers.github.io/bao#Equation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Equation> <http://www.w3.org/2000/01/rdf-schema#comment> "A mathematical statement that asserts the equality of two expressions"@en .
+<https://alexdonkers.github.io/bao#Equation> <http://www.w3.org/2000/01/rdf-schema#label> "Equation"@en .
+# 
+# https://alexdonkers.github.io/bao#FeatureOfInterest
+<https://alexdonkers.github.io/bao#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstraction of a real-world phenomenon."@en .
+<https://alexdonkers.github.io/bao#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of interest"@en .
+# 
+# https://alexdonkers.github.io/bao#Metric
+<https://alexdonkers.github.io/bao#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter which is used to compare the actual performance to the desired performance."@en .
+<https://alexdonkers.github.io/bao#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric"@en .
+# 
+# https://alexdonkers.github.io/bao#Objective
+<https://alexdonkers.github.io/bao#Objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Objective> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the desired value of a metric. An objective consists of one value and a corresponding assessment. Next to plain values, we also introduced specialized objectives, such as a minimum value, an average value or a count. A criterion can have multiple objectives."@en .
+<https://alexdonkers.github.io/bao#Objective> <http://www.w3.org/2000/01/rdf-schema#label> "Objective"@en .
+# 
+# https://alexdonkers.github.io/bao#Parameter
+<https://alexdonkers.github.io/bao#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical property which value determines the characteristic of something."@en .
+<https://alexdonkers.github.io/bao#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# 
+# https://alexdonkers.github.io/bao#Standard
+<https://alexdonkers.github.io/bao#Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao/Part> .
+<https://alexdonkers.github.io/bao#Standard> <http://www.w3.org/2000/01/rdf-schema#comment> "A document containing predefined criteria to compare the actual performance by a desired performance."@en .
+<https://alexdonkers.github.io/bao#Standard> <http://www.w3.org/2000/01/rdf-schema#label> "Standard"@en .
+# 
+# https://alexdonkers.github.io/bao#StandardizationBody
+<https://alexdonkers.github.io/bao#StandardizationBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#StandardizationBody> <http://www.w3.org/2000/01/rdf-schema#comment> "A social or legal institution managing a standard."@en .
+<https://alexdonkers.github.io/bao#StandardizationBody> <http://www.w3.org/2000/01/rdf-schema#label> "Standardization body"@en .
+# 
+# https://alexdonkers.github.io/bao#Symbol
+<https://alexdonkers.github.io/bao#Symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Symbol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao#Equation> .
+<https://alexdonkers.github.io/bao#Symbol> <http://www.w3.org/2002/07/owl#disjointWith> <https://alexdonkers.github.io/bao#Unit> .
+<https://alexdonkers.github.io/bao#Symbol> <http://www.w3.org/2000/01/rdf-schema#comment> "A figure that is used to represent a parameter."@en .
+<https://alexdonkers.github.io/bao#Symbol> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol"@en .
+# 
+# https://alexdonkers.github.io/bao#Unit
+<https://alexdonkers.github.io/bao#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular quantity value that has been chosen as a scale for measuring other quantities of the same kind."@en .
+<https://alexdonkers.github.io/bao#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit"@en .
+# 
+# https://alexdonkers.github.io/bao#Variable
+<https://alexdonkers.github.io/bao#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://alexdonkers.github.io/bao#Parameter> .
+<https://alexdonkers.github.io/bao#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter with a value that may change over time."@en .
+<https://alexdonkers.github.io/bao#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable"@en .
+# 
+# https://alexdonkers.github.io/bao/Part
+<https://alexdonkers.github.io/bao/Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://alexdonkers.github.io/bao/Part> <http://www.w3.org/2000/01/rdf-schema#comment> "A collective class which is introduced to represent standards and parts of these standards."@en .
+<https://alexdonkers.github.io/bao/Part> <http://www.w3.org/2000/01/rdf-schema#label> "Part"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://alexdonkers.github.io/bao#
+<https://alexdonkers.github.io/bao#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://orcid.org/0000-0002-8809-3277
+<https://orcid.org/0000-0002-8809-3277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0002-8809-3277> <http://www.w3.org/2000/01/rdf-schema#label> "Alex Donkers" .
+<https://orcid.org/0000-0002-8809-3277> <http://xmlns.com/foaf/0.1/name> "Alex Donkers" .
+<https://orcid.org/0000-0002-8809-3277> <http://xmlns.com/foaf/0.1/weblog> "https://linktr.ee/AlexDonkers" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://alexdonkers.github.io/bao#Category> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://alexdonkers.github.io/bao#Credit> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://alexdonkers.github.io/bao#Criterion> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://alexdonkers.github.io/bao#Standard> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
